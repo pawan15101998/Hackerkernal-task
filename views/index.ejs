@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1>Create your user here...</h1>
+      <form action="/register" method="post" name="myfrm" onsubmit="return validation()">
+        <input type="text" required name="name" placeholder="name"> <br>
+        <input type="email" required name="email" placeholder="email"><br>
+        <input type="number" required name="number" placeholder="number"><br>
+        <input id="a" type="submit">
+      </form>
+    </div>
+  <script>
+    function validation(){
+      var phone=document.forms['myfrm']['number']
+
+      var get_num=String(phone.value).charAt(0)
+      var first_num = Number(get_num)
+
+      if(isNaN(phone.value) || phone.value.length != 10 || first_num<=6){
+        alert("invalid phone number")
+        return false
+      }
+
+      return true
+
+    }
+  </script>    
+  </body>
+</html>

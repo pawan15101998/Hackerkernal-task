@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/profile.css" />
+  </head>
+  <body>
+    <div class="profile">
+        <h1>give task</h1>
+      <div class="center">
+        <form action="/submittask" method="post">
+          <div class="taskname">
+            <label for="cars">Enter task name:</label>
+            <input type="text" name="taskname" placeholder="enter task name" />
+          </div>
+          <div class="opt">
+            <div class="lable">
+              <label for="cars">Select user:</label>
+              <select name="haa" id="user">
+                <%if(alluser.length>0){%> <%alluser.forEach(function(val){%>
+                <option><%=val.name%></option>
+                <%})%> <%}else{%> <%}%>
+              </select>
+            </div>
+            <div class="right">
+            <label for="cars">Select Task type:</label>
+            <select name="pawan" id="type">
+              <option value="done">done</option>
+              <option value="pending">pending</option>
+            </select>
+            </div>
+          </div>
+          <div class="down">
+            <input type="submit" />
+          <a href="/de">Download Data</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

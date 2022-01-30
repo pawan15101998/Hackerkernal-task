@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.profile{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(230, 228, 229);
+}
+
+.profile h1{
+    font: 600 3vmax "gilroy";
+    color: rgb(41, 179, 233);
+    text-transform: uppercase;
+}
+
+.center{
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vmax;   
+}
+
+.taskname{
+    margin-top: -7vh;
+    margin-left: 12vw;
+}
+
+.taskname label{
+    font: 500 1.5vmax "gilroy";
+}
+
+.taskname input{
+    height: 5vh;
+    width: 15vw;
+    /* margin-left: 1vmax; */
+    padding: 0 1vmax;
+}
+
+.opt{
+    display: flex;
+    /* background-color: red;  */
+    height: 15vh;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.opt label{
+    height: 10vh;
+    width: 15vw;
+    font: 500 1.5vmax "gilroy";
+}
+
+.down{
+    text-align: center;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.down input{
+    padding: .7vmax 4vmax;
+    background-color: rgb(41, 179, 233);
+    border: none;
+    color: #fff;
+    letter-spacing: .3vmax;
+}
+
+.opt select{
+ height: 4vh;
+ width: 7vw;
+}
+
+.down a{
+    padding: 1vmax 2vmax;
+    margin-left: 3vw;
+    background-color: rgb(255, 98, 125);
+    border: none;
+
+}
+
+.down a{
+    text-decoration: none;
+    color: #fff;
+}

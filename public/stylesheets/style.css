@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100vh;
+  width: 100vw;
+}
+.main{
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(230, 228, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main>h1{
+  font: 600 2.5vmax 'gilroy';
+  text-transform: uppercase;
+  color: rgb(41, 179, 233);
+}
+
+form{
+  border-radius: 0.5vmax;
+  text-align: center;
+  height: 40vh;
+  width: 30vw;
+  margin-top: 2vmax;
+  background-color: rgb(216, 216, 216);
+}
+
+form input{
+  height: 7.5vh;
+  width: 28vw;
+  border-radius: 0.5vmax;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 0.5vmax;
+  margin-top: 1vmax;
+}
+
+#a{
+  background-color: rgb(41, 179, 233);
+  color: white;
+  font: 500 1vmax 'gilroy';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
